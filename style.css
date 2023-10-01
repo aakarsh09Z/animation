@@ -1,3 +1,23 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
     background-color: aqua;
+    position: fixed;
+}
+
+.bubble {
+    background-color: grey;
+    border: 2px solid;
+    border-color: white;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
 }
