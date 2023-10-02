@@ -20,6 +20,8 @@ let bubble_generator = () => {
 
 };
 
+const colors = ["red", "yellow", "lime", "orange", "teal", "yellowgreen", "greenyellow", "purple", "#ff6f61", "#9b2335", "#ffa500"];
+
 let fish_generator = () => {
     const x = -250;
     const y = Math.random() * 500;
@@ -28,11 +30,14 @@ let fish_generator = () => {
     fishGroup.classList.add('fish');
 
     let tail = document.createElement("div");
+    tail.style.borderLeftColor = colors[Math.floor(Math.random() * colors.length)];
     tail.classList.add('tail');
     tail.style.left = x + "px";
     tail.style.top = y + "px";
 
+
     let fb = document.createElement("div");
+    fb.style.borderLeftColor = colors[Math.floor(Math.random() * colors.length)];
     fb.classList.add('fish-body');
 
     let eye = document.createElement("div");
@@ -43,6 +48,7 @@ let fish_generator = () => {
     fishGroup.appendChild(tail);
 
     bubble.appendChild(fishGroup);
+
 };
 
 // let fish_generator2 = () => {

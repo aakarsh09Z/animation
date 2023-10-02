@@ -115,7 +115,7 @@
     top: -50px;
     left: -1px;
     border-top: 50px solid transparent;
-    border-left: 50px solid red;
+    border-left: 50px solid;
     border-bottom: 50px solid transparent;
     border-right: 50px solid transparent;
     border-radius: 20%;
@@ -126,7 +126,7 @@
     padding: 0;
     position: relative;
     border-top: 15px solid transparent;
-    border-left: 15px solid red;
+    border-left: 15px solid;
     border-bottom: 15px solid transparent;
     border-right: 15px solid transparent;
 }
