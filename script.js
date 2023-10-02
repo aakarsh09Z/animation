@@ -1,3 +1,5 @@
+
+
 const elem = selector => document.querySelector(selector);
 
 const bubble = elem(".box");
@@ -18,6 +20,58 @@ let bubble_generator = () => {
 
 };
 
+let fish_generator = () => {
+    const x = -250;
+    const y = Math.random() * 500;
+
+    let fishGroup = document.createElement("div");
+    fishGroup.classList.add('fish');
+
+    let tail = document.createElement("div");
+    tail.classList.add('tail');
+    tail.style.left = x + "px";
+    tail.style.top = y + "px";
+
+    let fb = document.createElement("div");
+    fb.classList.add('fish-body');
+
+    let eye = document.createElement("div");
+    eye.classList.add('eye');
+
+    fb.appendChild(eye);
+    tail.appendChild(fb);
+    fishGroup.appendChild(tail);
+
+    bubble.appendChild(fishGroup);
+};
+
+// let fish_generator2 = () => {
+//     const x = -250;
+//     const y = Math.random() * 500;
+
+//     let fishGroup = document.createElement("div");
+//     fishGroup.classList.add('fish');
+
+//     let tail = document.createElement("div");
+//     tail.classList.add('tail');
+//     tail.style.left = x + "px";
+//     tail.style.top = y + "px";
+
+//     let fb = document.createElement("div");
+//     fb.classList.add('fish-body');
+
+//     let eye = document.createElement("div");
+//     eye.classList.add('eye');
+
+//     fb.appendChild(eye);
+//     tail.appendChild(fb);
+//     fishGroup.appendChild(tail);
+
+//     bubble.appendChild(fishGroup);
+// };
+
+setInterval(fish_generator, 1000);
+// setInterval(fish_generator2, 1000);
 
 setInterval(bubble_generator, 350);
 
