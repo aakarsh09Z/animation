@@ -2,9 +2,10 @@ const elem = selector => document.querySelector(selector);
 
 const bubble = elem(".box");
 
-bubble.addEventListener("click", e => {
-    const x = e.offsetX;
-    const y = e.offsetY;
+let bubble_generator = () => {
+
+    const x = Math.random() * 850;
+    const y = Math.random() * 550;
 
     let bubbleGroup = document.createElement("ul");
     bubbleGroup.style.left = x + "px";
@@ -14,6 +15,9 @@ bubble.addEventListener("click", e => {
         bubbleGroup.appendChild(bb);
     }
     bubble.appendChild(bubbleGroup);
-});
+
+};
+
+setInterval(bubble_generator, 350);
 
 
