@@ -6,18 +6,19 @@
 .box {
     width: 100%;
     height: 100%;
-    background-color: aqua;
-    position: fixed;
+    margin: 0;
+    position: relative;
+    background: aqua;
 }
 
-.bubble {
-    background-color: grey;
-    border: 2px solid;
-    border-color: white;
-    margin: 0;
-    padding: 0;
+.box ul {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    margin: 0;
+    padding: 0;
     position: absolute;
+    list-style: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.45);
 }
