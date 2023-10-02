@@ -2,12 +2,12 @@
 
 const elem = selector => document.querySelector(selector);
 
-const bubble = elem(".box");
+const box = elem(".box");
 
 let bubble_generator = () => {
 
-    const x = Math.random() * 850;
-    const y = Math.random() * 550;
+    const x = Math.random() * window.screen.width;
+    const y = Math.random() * window.screen.height;
 
     let bubbleGroup = document.createElement("ul");
     bubbleGroup.style.left = x + "px";
@@ -16,15 +16,15 @@ let bubble_generator = () => {
         let bb = document.createElement("li");
         bubbleGroup.appendChild(bb);
     }
-    bubble.appendChild(bubbleGroup);
+    box.appendChild(bubbleGroup);
 
 };
 
-const colors = ["red", "yellow", "lime", "orange", "teal", "yellowgreen", "greenyellow", "purple", "#ff6f61", "#9b2335", "#ffa500"];
+const colors = ["red", "yellow", "lime", "orange", "teal", "yellowgreen", "purple", "#ff6f61", "#9b2335", "#ffa500"];
 
 let fish_generator = () => {
     const x = -250;
-    const y = Math.random() * 500;
+    const y = Math.random() * (window.screen.height - 100);
 
     let fishGroup = document.createElement("div");
     fishGroup.classList.add('fish');
@@ -47,9 +47,10 @@ let fish_generator = () => {
     tail.appendChild(fb);
     fishGroup.appendChild(tail);
 
-    bubble.appendChild(fishGroup);
+    box.appendChild(fishGroup);
 
 };
+
 
 // let fish_generator2 = () => {
 //     const x = -250;

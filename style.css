@@ -197,47 +197,50 @@
 
 @keyframes float-right {
     0% {
-        transform: translateX(130px);
+        transform: translateX(10vw);
     }
 
     10% {
-        transform: translateX(260px);
+        transform: translateX(20vw);
     }
 
     20% {
-        transform: translateX(390px);
+        transform: translateX(30vw);
     }
 
     30% {
-        transform: translateX(520px);
+        transform: translateX(40vw);
     }
 
     40% {
-        transform: translateX(650px);
+        transform: translateX(50vw);
     }
 
     50% {
-        transform: translateX(780px);
+        transform: translateX(60vw);
     }
 
     60% {
-        transform: translateX(910px);
+        transform: translateX(70vw);
     }
 
     70% {
-        transform: translateX(1040px);
+        transform: translateX(80vw);
     }
 
     80% {
-        transform: translateX(1170px);
+        transform: translateX(90vw);
     }
 
     90% {
-        transform: translateX(1300px);
+        transform: translateX(100vw);
     }
 
     100% {
-        transform: translateX(1430px);
+        transform: translateX(110vw);
+        visibility: hidden;
     }
 
 }
+
+@keyframe float-random {}
