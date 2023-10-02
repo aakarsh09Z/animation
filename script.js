@@ -18,6 +18,7 @@ let bubble_generator = () => {
 
 };
 
+
 setInterval(bubble_generator, 350);
 
 

@@ -11,6 +11,7 @@
     background: aqua;
 }
 
+/*bubble*/
 .box ul {
     width: 50px;
     height: 50px;
@@ -96,6 +97,52 @@
     transform: rotate(-40deg);
 }
 
+/*fish*/
+
+.fish {
+    margin: 100px 100px 100px 100px;
+    padding: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    animation: float-right 4s linear forwards;
+}
+
+.fish-body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -50px;
+    left: -1px;
+    border-top: 50px solid transparent;
+    border-left: 50px solid red;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-radius: 20%;
+}
+
+.tail {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-top: 15px solid transparent;
+    border-left: 15px solid red;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    top: -20px;
+    left: -35px;
+    z-index: 1;
+    position: absolute;
+}
+
+
 
 @keyframes floatUL {
     0% {
@@ -146,4 +193,51 @@
         opacity: 0.3;
         visibility: hidden;
     }
+}
+
+@keyframes float-right {
+    0% {
+        transform: translateX(100px);
+    }
+
+    10% {
+        transform: translateX(200px);
+    }
+
+    20% {
+        transform: translateX(300px);
+    }
+
+    30% {
+        transform: translateX(400px);
+    }
+
+    40% {
+        transform: translateX(500px);
+    }
+
+    50% {
+        transform: translateX(600px);
+    }
+
+    60% {
+        transform: translateX(700px);
+    }
+
+    70% {
+        transform: translateX(800px);
+    }
+
+    80% {
+        transform: translateX(900px);
+    }
+
+    90% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(1100px);
+    }
+
 }
