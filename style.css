@@ -122,7 +122,7 @@
     border-left: 50px solid;
     border-bottom: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 .tail {
@@ -140,7 +140,7 @@
     height: 10px;
     background-color: black;
     border-radius: 50%;
-    top: -20px;
+    top: -17px;
     left: -35px;
     z-index: 1;
     position: absolute;
@@ -161,32 +161,32 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: -50px;
+    top: -30px;
     left: -1px;
-    border-top: 50px solid transparent;
-    border-left: 50px solid;
-    border-bottom: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-radius: 20%;
+    border-top: 30px solid transparent;
+    border-left: 30px solid;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-radius: 70%;
 }
 
 .tail2 {
     margin: 0;
     padding: 0;
     position: relative;
-    border-top: 15px solid transparent;
-    border-left: 15px solid;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
 }
 
 .eye2 {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: black;
     border-radius: 50%;
-    top: -20px;
-    left: -35px;
+    top: -10px;
+    left: -20px;
     z-index: 1;
     position: absolute;
 }
@@ -206,12 +206,12 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    top: -50px;
+    top: -75px;
     left: -1px;
-    border-top: 50px solid transparent;
-    border-left: 50px solid;
-    border-bottom: 50px solid transparent;
-    border-right: 50px solid transparent;
+    border-top: 75px solid transparent;
+    border-left: 75px solid;
+    border-bottom: 75px solid transparent;
+    border-right: 75px solid transparent;
     border-radius: 20%;
 }
 
@@ -219,10 +219,10 @@
     margin: 0;
     padding: 0;
     position: relative;
-    border-top: 15px solid transparent;
-    border-left: 15px solid;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-top: 25px solid transparent;
+    border-left: 25px solid;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid transparent;
 }
 
 .eye3 {
