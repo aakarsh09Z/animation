@@ -9,6 +9,7 @@
     margin: 0;
     position: relative;
     background: aqua;
+    overflow: hidden;
 }
 
 /*bubble*/
