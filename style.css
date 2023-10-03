@@ -36,7 +36,7 @@
     height: 40px;
     border-radius: 50%;
     position: absolute;
-    z-index: 10;
+    z-index: 25;
     content: '';
     top: 10%;
     left: 10%;
@@ -94,7 +94,7 @@
     border-radius: 50%;
     border-top: 3px solid white;
     position: absolute;
-    z-index: 11;
+    z-index: 20;
     content: '';
     top: 10%;
     left: 10%;
@@ -109,7 +109,7 @@
     width: 0;
     height: 0;
     position: absolute;
-    animation: float-right 5s linear forwards;
+    animation: float-right 8s linear forwards;
 }
 
 .fish-body {
@@ -154,7 +154,8 @@
     width: 0;
     height: 0;
     position: absolute;
-    animation: float-right2 8s linear forwards;
+    animation: float-right2 11s linear forwards;
+    z-index: 10;
 }
 
 .fish2-body {
@@ -199,7 +200,7 @@
     width: 0;
     height: 0;
     position: absolute;
-    animation: float-right3 10s linear forwards;
+    animation: float-right3 13s linear forwards;
 }
 
 .fish3-body {
